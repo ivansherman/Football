@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150201190808) do
+ActiveRecord::Schema.define(version: 20150202053438) do
 
   create_table "cities", force: :cascade do |t|
     t.text    "name"
@@ -35,6 +35,10 @@ ActiveRecord::Schema.define(version: 20150201190808) do
     t.integer  "away_team_id"
     t.integer  "home_score"
     t.integer  "away_score"
+    t.text     "home_team"
+    t.text     "away_team"
+    t.integer  "line"
+    t.integer  "total_line"
   end
 
   create_table "states", force: :cascade do |t|
